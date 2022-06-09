@@ -238,7 +238,7 @@ let theStream;
 function getStream() {
     const cadrePhotoVideo = document.getElementById("photoVideo");
     cadrePhotoVideo.innerHTML += `<div style="width:100%;"><video autoplay style="height: 180px; width: 240px; border: solid white 1px;"></video></div>
-    <img style="width:10%;" src="images/cam2.png" alt="Prendre la photo" onclick="takePhoto()"></div>`;
+    <img class="img_button" style="width:10%;" src="images/cam2.png" alt="Prendre la photo" onclick="takePhoto()"></div>`;
     const cadrePhotoPrise = document.getElementById("photoPrise");
     cadrePhotoPrise.innerHTML = ``;
     const buttonGetStream = document.getElementById("buttonGetStream");
@@ -299,7 +299,7 @@ function subscriberForm() {
         <div id="photoVideo" style="display: flex; flex-wrap: wrap; width: 100%; justify-content: center; color:azure;"></div>
         <div id="photoPrise" style="display: flex; flex-wrap: wrap; width: 100%; justify-content: center; color:azure;"></div>
         <div id="buttonGetStream" style="width: 100%">
-            <img src="images/camera.png" alt="Prendre une photo" onclick="getStream()">
+            <img class="img_button" src="images/camera.png" alt="Prendre une photo" onclick="getStream()">
         </div>
     </div style="width: 50%; height: 100%;">
     <div class="formulaire">
