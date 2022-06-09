@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Système Solaire</title>
+    <link rel="icon" href="images/logo_head.webp" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" ></script>
+</head>
+<body>
+    <!-- La partie intro avec le titre, la présentation du Système, du soleil, et des planètes -->
+    
+    <div id="intro" class="intro">
+        <h1>Le Système Solaire</h1>
+        <p style="color: white;">Le Système solaire est composé du Soleil mais aussi de tout ce qui gravite autour de celui-ci : les planètes et leurs satellites, les planètes naines, les astéroïdes, les objets de la ceinture de Kuiper et les comètes. On parle également de Système solaire lorsqu’on fait référence à un groupe de corps célestes orbitant autour d’une étoile (on parle alors de planètes extrasolaires). Dans cette animation, le Système solaire représente le système incluant le Soleil et la Terre. Les dimensions du système solaire sont définies par rapport à la distance Soleil-Terre, que l’on appelle « unité astronomique » (UA). Une UA fait 150 millions de km. On estime que la distance entre le soleil et la frontière du système solaire est d’environ 86 à 100 UA. </p>
+        <button class="button_important" onclick="animation()">Je veux voir l'animation ! 😃</button>
+        <fieldset class="cadre">
+            <legend class="legend_accueil">LE SOLEIL</legend>
+            <img src="images/soleil.png" alt="image représentant le Soleil" title="Soleil" />
+            <p>
+                Le soleil est une étoile de taille et de luminosité moyennes. Les rayons solaires et autres radiations sont produits grâce à la conversion d’hydrogène en hélium à l’intérieur du soleil brûlant et dense. Bien que cette fusion nucléaire brûle 600 millions de tonnes d’hydrogène par seconde, le Soleil est si massif (2 x 10 puissance 30 kg) qu’il peut continuer à briller autant pendant encore 6 milliards d’années ! C’est cette stabilité qui a permis à la vie de se développer et de survivre sur terre.
+            </p>
+        </fieldset>
+        <fieldset class="cadre">
+            <legend class="legend_accueil">LES PLANÈTES TELLURIQUES</legend>
+            <p>
+                Les planètes telluriques sont principalement composées de roches et de métaux et ont une densité relativement élevée, une rotation lente, une surface solide, pas d'anneaux et peu de satellites.
+            </p>
+        </fieldset>
+        <fieldset class="cadre">
+            <legend class="legend_accueil">LES PLANÈTES GAZEUSES</legend>
+            <p>
+                Les planètes gazeuses sont principalement composées d'hydrogène et d'hélium et généralement ont une faible densité, une rotation rapide, des atmosphères épaisses, des anneaux et beaucoup de satellites.
+            </p>
+        </fieldset>
+        <!-- Lorsqu'on ajoute, modifie ou supprime des planètes, elles seront affichés, modifiés ou enlevés de la liste -->
+        <fieldset class="cadre">
+            <legend class="legend_accueil">Vos planètes</legend>
+            <div id="content" style="display: flex; flex-wrap: wrap; width: 100%; justify-content: center; color:azure;"></div>
+            <div id="ajout_planete">
+                <p>Pour ajouter une planète, veuillez cliquer sur le bouton ci-dessous</p>
+                <div style="align-items: center; width: 100%; margin-top: 30px;">
+                    <button onclick="add()">Ajouter une planète</button><br><br>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="cadre">
+            <legend class="legend_accueil">Formulaire de souscription</legend>
+            <div id="form">
+                <p style="text-align: center;">
+                    Notre page vous a plue et vous souhaitez être tenu informé des changements de notre application ? <br><br>
+                    C'est simple ! Cliquez sur le bouton ci-dessous, remplissez et soumettez-nous le formulaire. 
+                </p>
+                <button onclick="subscriberForm()">Remplir maintenant !</button>
+            </div>
+        </fieldset>
+        <fieldset class="cadre">
+            <legend class="legend_accueil">Stockage</legend>
+            <div id="stockage">
+                <p>Your device memory is ~<b id="result">unknown</b> GiB.</p>
+            </div>
+        </fieldset>
+    </div>
